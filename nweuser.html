@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!---Bootstrap Linking---->
+    <link rel="stylesheet" href="sbootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css.map"> -->
+    <link rel="stylesheet" href="sbootstrap-grid.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css.map"> -->
+    <link rel="stylesheet" href="sbootstrap-reboot.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.css.map"> -->
+    <link rel="stylesheet" href="sbootstrap-reboot.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map"> -->
+    <link rel="stylesheet" href="sbootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css.map"> -->
+    <link rel="stylesheet" href="sbootstrap.min.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with LnB Friends</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Create a New account </div>
+        <div class="form">
+            <div class="login form-group"><br>
+                <form action="store_data.php" method="post">
+                    <label for="name" class="name">&nbsp;&nbsp;Name:-</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name here!"
+                        required="required">
+                    <label for="email" class="name">&nbsp;&nbsp;Email:-</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required="required">
+                    <label for="mob" class="name">&nbsp;&nbsp;Mobile:-</label>
+                    <input type="text" name="mob" class="form-control" id=""><br>
+                    <label for="dob" class="name">&nbsp;&nbsp;DOB:-</label>
+                    <input type="date" name="dob" id="dob" class="form-control" required="required">
+                    <label for="country" class="name">&nbsp;&nbsp;Country:-</label>
+                    <input type="text" name="country" id="country" placeholder="Enter your Country Name"
+                        class="form-control" required="required">
+                    <label for="password" class="name">&nbsp;&nbsp;Password:-</label>
+                    <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Create a new password " required="required">
+                    <label for="password" class="name">&nbsp;&nbsp;ReType:-</label>
+                    <input type="password" name="password1" id="password" class="form-control"
+                        placeholder="ReType the password" required="required">
+                    <br><br>
+                    <button type="submit" class="btn btn-large btn-primary">Register</button>
+                    <button type="reset" class="btn btn-large btn-success">Clear Form</button>
+                    <hr>
+                    <div class="newuser"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already LnB User <a
+                            href="index.html">Click here</a>
+                        to Sign-in</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+
+    html,
+    body {
+        display: grid;
+        height: 100%;
+        background-color: #2a86e9;
+        place-items: center;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 25px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(255, 255, 255);
+    }
+
+    ::-webkit-scrollbar-track:hover {
+        background: rgba(122, 122, 122, 0.28);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #006fe6d9;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #0557b0d9;
+    }
+
+    .wrapper {
+        width: 670px;
+        background: #fff;
+        border-radius: 10px;
+        border: solid 5px rgb(255, 255, 255);
+    }
+
+    .wrapper .title {
+        background: #007bff;
+        color: #fff;
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: center;
+        text-shadow: #333 2px 2px 2px;
+        border-bottom: 1px solid #006fe6;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .wrapper .form {
+        padding: 20px 15px;
+        min-height: 600px;
+        max-height: 600px;
+        overflow-y: auto;
+        /* display: grid; */
+    }
+
+    .wrapper .form .user {
+        background-color: #006fe6;
+        height: 100px;
+        border-radius: 50% 50% 50% 50%;
+        width: 80px;
+        margin-left: 265px;
+        place-items: center;
+    }
+
+    .wrapper .form .user1 {
+        background-color: #006fe6;
+        height: 100px;
+        border-radius: 50% 50% 0% 0%;
+        width: 200px;
+        margin-left: 200px;
+        place-items: center;
+    }
+
+    .login {
+        height: 550px;
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        border: solid 2px #006fe6;
+    }
+
+    .login .name {
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-top: 7px;
+    }
+
+    .login .name1 {
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-top: 7px;
+    }
+
+    .form-control {
+        width: 65%;
+        float: right;
+        margin-top: 7PX;
+        margin-right: 35px;
+    }
+
+    .btn {
+        margin-left: 150px;
+    }
+
+    .newuser {
+        font-size: 20px;
+    }
+</style>
+
+</html>
